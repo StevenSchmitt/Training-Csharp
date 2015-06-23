@@ -1,4 +1,4 @@
-﻿namespace MethodParameters
+﻿namespace Training.Csharp.MethodParameters
 {
     public class KeywordSamples
     {

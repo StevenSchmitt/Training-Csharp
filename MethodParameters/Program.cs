@@ -1,10 +1,17 @@
 ﻿using System;
 
-namespace MethodParameters
+namespace Training.Csharp.MethodParameters
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            DoKeywordSamples();
+
+            DoOptionalAndNamedParameters();
+        }
+
+        private static void DoKeywordSamples()
         {
             var keywordSamples = new KeywordSamples();
 
@@ -72,6 +79,41 @@ namespace MethodParameters
             //Call method with params
             int diff = keywordSamples.Sub(10, 1, 2, 3);// Minuend: 10, Subtrahend: 1, 2, 3
             Console.WriteLine("Params Sub: " + diff);
+            Console.ReadLine();
+
+            Console.WriteLine("Finish");
+            Console.ReadLine();
+        }
+
+        private static void DoOptionalAndNamedParameters()
+        {
+            Console.WriteLine("Start");
+            Console.ReadLine();
+
+            var optionalAndNamedSamples = new OptionalAndNamedSamples();
+
+            //Default call
+            Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature(20, 10, 40));
+            Console.ReadLine();
+
+            //Call with optional parameters and default values
+            Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature(20));
+            Console.ReadLine();
+
+            //Call with named arguments
+            Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature(20, min: 15, max: 19));
+            Console.ReadLine();
+
+            //Call with optional parameters and named arguments
+            Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature(20, max: 15));
+            Console.ReadLine();
+
+            //Wrong call
+            //Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature(max: 15, 20, min: 20));
+            //Console.ReadLine();
+
+            //Which method is called???
+            Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature2(20));
             Console.ReadLine();
 
             Console.WriteLine("Finish");

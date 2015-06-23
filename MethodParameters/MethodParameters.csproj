@@ -7,8 +7,8 @@
     <ProjectGuid>{478BEDA3-9425-49FD-A7F7-A1C98BD947FD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MethodParameters</RootNamespace>
-    <AssemblyName>MethodParameters</AssemblyName>
+    <RootNamespace>Training.Csharp.MethodParameters</RootNamespace>
+    <AssemblyName>Training.Csharp.MethodParameters</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KeywordSamples.cs" />
+    <Compile Include="OptionalAndNamedSamples.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
