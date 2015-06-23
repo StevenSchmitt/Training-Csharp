@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InitializerSamples.cs" />
     <Compile Include="KeywordSamples.cs" />
     <Compile Include="OptionalAndNamedSamples.cs" />
     <Compile Include="Program.cs" />

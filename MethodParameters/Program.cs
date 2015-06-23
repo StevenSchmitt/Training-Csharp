@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Training.Csharp.MethodParameters
 {
@@ -6,17 +7,22 @@ namespace Training.Csharp.MethodParameters
     {
         static void Main(string[] args)
         {
-            DoKeywordSamples();
+            Console.WriteLine("Start");
+            Console.ReadLine();
 
-            DoOptionalAndNamedParameters();
+            //DoKeywordSamples();
+
+            //DoOptionalAndNamedParameters();
+
+            DoInitializerSamples();
+
+            Console.WriteLine("Finish");
+            Console.ReadLine();
         }
 
         private static void DoKeywordSamples()
         {
             var keywordSamples = new KeywordSamples();
-
-            Console.WriteLine("Start");
-            Console.ReadLine();
 
             //Call by value with value types
             int intValue = 100;
@@ -80,16 +86,10 @@ namespace Training.Csharp.MethodParameters
             int diff = keywordSamples.Sub(10, 1, 2, 3);// Minuend: 10, Subtrahend: 1, 2, 3
             Console.WriteLine("Params Sub: " + diff);
             Console.ReadLine();
-
-            Console.WriteLine("Finish");
-            Console.ReadLine();
         }
 
         private static void DoOptionalAndNamedParameters()
         {
-            Console.WriteLine("Start");
-            Console.ReadLine();
-
             var optionalAndNamedSamples = new OptionalAndNamedSamples();
 
             //Default call
@@ -115,9 +115,57 @@ namespace Training.Csharp.MethodParameters
             //Which method is called???
             Console.WriteLine("Is temperature okay: " + optionalAndNamedSamples.CheckTemperature2(20));
             Console.ReadLine();
+        }
 
-            Console.WriteLine("Finish");
-            Console.ReadLine();
+        private static void DoInitializerSamples()
+        {
+            //Object initializers
+
+            //Old style
+            Car focus = new Car("Focus");
+            focus.Kw = 74;
+            focus.Price = 25000;
+
+            Producer ford = new Producer();
+            ford.Name = "Ford";
+            ford.Location = "Detroit";
+
+            focus.Producer = ford;
+
+            //object initializer --> need default constructor
+            //Car mondeo = new Car { ModelName = "Mondeo", Kw = 100, Price = 35000, Producer = ford };
+
+            //object initializer --> attention double initialization: ModelName!!!
+            Car kuga = new Car("Mondeo") { ModelName = "Kuga", Kw = 100, Price = 35000, Producer = ford };
+
+            //Nested object initializer
+            //Car a3 = new Car
+            //{
+            //    ModelName = "A3",
+            //    Kw = 135,
+            //    Price = 40000,
+            //    Producer = new Producer() { Name = "Audi", Location = "Ingolstadt" }
+            //};
+
+            //Collection initializers
+
+            //Old style
+            var cars = new List<Car>();
+            Car a4 = new Car("A4");
+            focus.Kw = 200;
+            focus.Price = 45000;
+            cars.Add(a4);
+            //...
+            //...
+            //...
+
+            //Collection initializer
+            var producers = new List<Producer>
+            { 
+                new Producer { Name = "Mercedes", Location = "Stuttgart" },
+                new Producer { Name = "BMW", Location = "München" },
+                new Producer { Name = "Opel", Location = "Rüsselsheim" }
+            };
         }
     }
 }
