@@ -15,7 +15,7 @@ namespace Training.Csharp.MethodParameters
 
             //DoOptionalAndNamedParameters();
 
-            DoInitializerSamples();
+            //DoInitializerSamples();
 
             Console.WriteLine("Finish");
             Console.ReadLine();
