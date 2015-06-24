@@ -15,6 +15,10 @@ namespace Training.Csharp.Dynamics
 
             //DoMethodParamterSample();
 
+            //DoAnonymousTypesSample();
+
+            DoAnonymousMethodSample();
+
             Console.WriteLine("Finish");
             Console.ReadLine();
         }
@@ -76,6 +80,50 @@ namespace Training.Csharp.Dynamics
 
             //Delegate as parameter
             methodParameterSample.Print(MethodParamterSample.FileSystemPrint, "Hello World to file system");
+        }
+
+        private static void DoAnonymousTypesSample()
+        {
+            var anonymeType = new { FirstName = "Steven", LastName = "Schmitt", Age = 30};
+            
+            //Now available in intellisense!!!
+
+            //useful ToString()-Method
+            Console.WriteLine(anonymeType.ToString());
+
+            Console.ReadLine();
+
+            //Can call properties
+            Console.WriteLine(string.Format("My name is {0}. I'm {1} years old.", anonymeType.FirstName, anonymeType.Age));
+        }
+
+        private static void DoAnonymousMethodSample()
+        {
+            var methodPointerSample = new MethodPointerSample(20);
+
+            //Define anonymous method
+            MethodPointerSample.DoArithmeticOperation operation = delegate(int number)
+            {
+                Console.WriteLine("This is an anomymous method call", number);
+                return number;
+            };
+
+            //Call delegate
+            operation(10);
+
+            //Check result
+            Console.WriteLine(methodPointerSample.GetResult());
+
+            Console.ReadLine();
+
+            //Attach other method to delegate
+            operation = new MethodPointerSample.DoArithmeticOperation(methodPointerSample.Add);
+
+            //Call delegate
+            operation(10);
+
+            //Check result
+            Console.WriteLine(methodPointerSample.GetResult());
         }
     }
 }
