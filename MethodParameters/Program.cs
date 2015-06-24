@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Training.Csharp.MethodParameters
@@ -150,7 +151,7 @@ namespace Training.Csharp.MethodParameters
             //Collection initializers
 
             //Old style
-            var cars = new List<Car>();
+            var cars = new ArrayList();
             Car a4 = new Car("A4");
             focus.Kw = 200;
             focus.Price = 45000;
@@ -160,7 +161,7 @@ namespace Training.Csharp.MethodParameters
             //...
 
             //Collection initializer
-            var producers = new List<Producer>
+            var producers = new ArrayList
             { 
                 new Producer { Name = "Mercedes", Location = "Stuttgart" },
                 new Producer { Name = "BMW", Location = "München" },
