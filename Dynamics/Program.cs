@@ -17,7 +17,9 @@ namespace Training.Csharp.Dynamics
 
             //DoAnonymousTypesSample();
 
-            DoAnonymousMethodSample();
+            //DoAnonymousMethodSample();
+
+            //DoLambdaSamples();
 
             Console.WriteLine("Finish");
             Console.ReadLine();
@@ -124,6 +126,43 @@ namespace Training.Csharp.Dynamics
 
             //Check result
             Console.WriteLine(methodPointerSample.GetResult());
+        }
+
+        private static void DoLambdaSamples()
+        {
+            var lambdaSamples = new LambdaSamples();
+
+            lambdaSamples.CallDefaultDelegate();
+
+            Console.ReadLine();
+
+            lambdaSamples.CallAnonymousMethod();
+
+            Console.ReadLine();
+
+            lambdaSamples.CallLambdaExpression();
+
+            Console.ReadLine();
+
+            lambdaSamples.CallLambdaStatement();
+
+            Console.ReadLine();
+
+            //Lambda as parameter inline
+            Console.WriteLine("Lambda as parameter: " + lambdaSamples.CallLambdaParameter((a, b) => a + b, 5, 6));
+
+            Console.ReadLine();
+
+            //Lambda as parameter inline
+            Console.WriteLine("Lambda as parameter: " + lambdaSamples.CallLambdaParameter((a, b) => a * b, 5, 6));
+
+            Console.ReadLine();
+
+            //Lambda as parameter inline
+            //Only 1 parameter!!
+            Console.WriteLine("Lambda as parameter: " + lambdaSamples.CallLambdaParameter(a => a * 5, 6));
+
+            Console.ReadLine();
         }
     }
 }

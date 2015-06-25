@@ -40,6 +40,7 @@ namespace Training.Csharp.Dynamics
 
     public class MethodParamterSample
     {
+        //Delegate
         public delegate void DoPrint(string valueToPrint);
 
         //Delegate caller --> delegate is method parameter
@@ -48,11 +49,13 @@ namespace Training.Csharp.Dynamics
             print(value);
         }
 
+        //1 Print to console 
         public static void ConsolePrint(string value)
         {
             Console.WriteLine(value);
         }
 
+        //2 Print to file system
         public static void FileSystemPrint(string value)
         {
             File.WriteAllText(@"C:\DelegatePrint.txt", value);
