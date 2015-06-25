@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DelegateSamples.cs" />
     <Compile Include="LambdaSamples.cs" />
+    <Compile Include="PerformOpertionEx.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
