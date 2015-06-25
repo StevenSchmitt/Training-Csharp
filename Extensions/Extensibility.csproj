@@ -7,8 +7,8 @@
     <ProjectGuid>{D896F0B6-D544-4760-8719-D7A6CCCE3344}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Training.Csharp.Extensions</RootNamespace>
-    <AssemblyName>Training.Csharp.Extensions</AssemblyName>
+    <RootNamespace>Training.Csharp.Extensibility</RootNamespace>
+    <AssemblyName>Training.Csharp.Extensibility</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

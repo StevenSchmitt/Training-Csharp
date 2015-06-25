@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Training.Csharp.Extensions
+namespace Training.Csharp.Extensibility
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Training.Csharp.Extensions
+namespace Training.Csharp.Extensibility
 {
     public static class ExtensionMethodSamples
     {

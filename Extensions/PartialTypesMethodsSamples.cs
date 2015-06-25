@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Training.Csharp.Extensions
+namespace Training.Csharp.Extensibility
 {
     //class Person 1
     public partial class Person : IDisposable
