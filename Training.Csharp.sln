@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics", "Dynamics\Dynamics.csproj", "{0BABE9F1-3628-410C-9AC2-9B6CA96E49B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{D896F0B6-D544-4760-8719-D7A6CCCE3344}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0BABE9F1-3628-410C-9AC2-9B6CA96E49B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BABE9F1-3628-410C-9AC2-9B6CA96E49B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BABE9F1-3628-410C-9AC2-9B6CA96E49B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
