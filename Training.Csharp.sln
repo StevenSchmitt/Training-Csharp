@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics", "Dynamics\Dynami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensibility", "Extensions\Extensibility.csproj", "{D896F0B6-D544-4760-8719-D7A6CCCE3344}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{CA4093D6-51E5-4747-A7D0-5F11D28635A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D896F0B6-D544-4760-8719-D7A6CCCE3344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4093D6-51E5-4747-A7D0-5F11D28635A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4093D6-51E5-4747-A7D0-5F11D28635A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4093D6-51E5-4747-A7D0-5F11D28635A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4093D6-51E5-4747-A7D0-5F11D28635A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
