@@ -17,7 +17,13 @@ namespace Training.Csharp.Linq
 
             //LinqToObjectSamples.ComplexObjects();
 
-            LinqEx.Do();
+            //LinqToXmlSamples.CreateXml();
+
+            //LinqToXmlSamples.SaveXml();
+
+            //LinqToXmlSamples.LoadXml();
+
+            //LinqToXmlSamples.QueryXml();
 
             Console.WriteLine("Finish");
             Console.ReadLine();

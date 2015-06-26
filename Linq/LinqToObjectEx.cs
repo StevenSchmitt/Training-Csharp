@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Training.Csharp.Linq
 {
-    public class LinqEx
+    public class LinqToObjectEx
     {
         //Helper
         //https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b
@@ -35,6 +35,37 @@ namespace Training.Csharp.Linq
             new Person() { Department = "Marketing", FirstName = "Irina", LastName = "Schwamm", Age = 60},
             new Person() { Department = "Development", FirstName = "Steven", LastName = "Bauer", Age = 50},
         };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         #region Solution
 

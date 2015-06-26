@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LinqEx.cs" />
+    <Compile Include="LinqToObjectEx.cs" />
     <Compile Include="LinqToObjectSamples.cs" />
+    <Compile Include="LinqToXmlSamples.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
