@@ -25,6 +25,14 @@ namespace Training.Csharp.Linq
 
             //LinqToXmlSamples.QueryXml();
 
+            LinqToSqlSamples.Read();
+
+            //LinqToSqlSamples.Create();
+
+            //LinqToSqlSamples.Update();
+
+            //LinqToSqlSamples.Delete();
+
             Console.WriteLine("Finish");
             Console.ReadLine();
         }
