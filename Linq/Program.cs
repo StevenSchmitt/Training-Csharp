@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Training.Csharp.Linq
 {
     class Program
@@ -14,7 +15,9 @@ namespace Training.Csharp.Linq
 
             //LinqToObjectSamples.CalculationQueries();
 
-            LinqToObjectSamples.ComplexObjects();
+            //LinqToObjectSamples.ComplexObjects();
+
+            LinqEx.Do();
 
             Console.WriteLine("Finish");
             Console.ReadLine();

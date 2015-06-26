@@ -4,6 +4,8 @@ namespace Training.Csharp.Linq
 {
     public class Person
     {
+        public string Department { get; set; }
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

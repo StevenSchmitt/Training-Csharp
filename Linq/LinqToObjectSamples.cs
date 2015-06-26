@@ -16,7 +16,7 @@ namespace Training.Csharp.Linq
                 Enumerable.Where(names, n => n.Length >= 4);
 
             foreach (string n in filteredNames)
-                Console.Write(n + "|");            // Dick|Harry|
+                Console.Write(n + "|");
 
             Console.ReadLine();
 
@@ -24,7 +24,7 @@ namespace Training.Csharp.Linq
             filteredNames = names.Where(n => n.Length >= 4);
 
             foreach (string n in filteredNames)
-                Console.Write(n + "|");            // Dick|Harry|
+                Console.Write(n + "|");
 
             Console.ReadLine();
 
@@ -34,12 +34,10 @@ namespace Training.Csharp.Linq
                             select name;
 
             foreach (string n in filteredNames)
-                Console.Write(n + "|");            // Dick|Harry|
+                Console.Write(n + "|");
 
             Console.ReadLine();
         }
-
-//code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b
 
         public static void ModifyData()
         {
@@ -98,11 +96,11 @@ namespace Training.Csharp.Linq
 
             int age = 18;
 
-            //Grouping of complex objects?
+            //Grouping of complex objects
             var result = from person in persons
                          where person.Age > age
+                         orderby person.LastName
                          group person by person.LastName into grouping // --> new grouped scope
-                         orderby grouping.Key
                          select grouping;
 
             age = 25;
@@ -121,6 +119,20 @@ namespace Training.Csharp.Linq
                 {
                     Console.WriteLine(" -" + name.FirstName);
                 }
+            }
+
+            //------- Nested queries -------
+            var result2 = from person in persons
+                         group person by person.LastName into grouping
+                         select new //Anonymous type
+                         {
+                             LastName = grouping.Key,
+                             Count = grouping.Count()
+                         };
+
+            foreach (var group in result2)
+            {
+                Console.WriteLine("LastName-Group: " + group.LastName + " Count: " + group.Count);
             }
         }
     }
